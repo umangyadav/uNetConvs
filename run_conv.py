@@ -60,7 +60,8 @@ def gen_conv(activation_lens: list[int], filter_lens: list[int], padding: list[i
 def set_env_flags(mlir_flag, layout_flag):
     os.environ["MIGRAPHX_ENABLE_NHWC"] = str(layout_flag)
     if mlir_flag:
-        os.environ["MIGRAPHX_MLIR_USE_SPECIFIC_OPS"] = "dot,fused,convolution"
+        os.environ["MIGRAPHX_MLIR_USE_SPECIFIC_OPS"] = "dot,fused,convolution,attention"
+        os.environ["MIGRAPHX_MLIR_ENABLE_SPLITK"] = "1"
     else:
         os.environ["MIGRAPHX_DISABLE_MLIR"] = "1"
         os.environ["MIOPEN_FIND_ENFORCE"] = "3"
