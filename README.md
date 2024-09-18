@@ -2,7 +2,7 @@ This benchmarks SDXL UNet Convs with both MIOpen and MLIR with NCHW and NHWC lay
 
 First make following changes : 
 1. `run_conv.py` script generates individual convolution onnx files in FP16 data type. You can change that if you wish.
-2. Change path to `migraphx-driver` inside the script.
+2. Change path to `migraphx-driver` inside the `run_conv.py`.
 
 To run, follow these steps. 
 1. `pip3 install -r requirements.txt`
