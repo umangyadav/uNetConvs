@@ -47,6 +47,6 @@ To get Unique convolutions for a onnx file, you can instrument the `src/onnx/par
         std::cout << "--group " << v_group << "\n";
 ```
 
-Then you can run `migraphx-driver read model.onnx |& tee convs.txt` and then do `cat conv.txt | sort -q |& tee uniq_conv.txt`
+Then you can run `migraphx-driver read model.onnx |& tee convs.txt` and then do `cat convs.txt | sort -q |& tee uniq_convs.txt`
 
 
