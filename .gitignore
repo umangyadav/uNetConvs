@@ -33,9 +33,6 @@ htmlcov/
 .tox/
 .nox/
 
-# Generated ONNX models
-*.onnx
-
 # Generated Excel output
 *.xlsx
 
