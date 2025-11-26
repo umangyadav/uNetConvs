@@ -1,2 +1,27 @@
+# uNetConvs Requirements
+# Python 3.7+ required
+
+# Core ONNX library for model creation and validation
+onnx>=1.14.0
+
+# NumPy for weight initialization
+numpy>=1.21.0
+
+# Excel file handling
 openpyxl
-onnx
+
+# Testing
+pytest
+
+# Optional: For visualizing ONNX models
+# Uncomment if you want to visualize the generated models
+# netron>=7.0.0
+
+# Optional: For running/testing the generated models
+# Uncomment if you want to test the models with ONNX Runtime
+# onnxruntime>=1.15.0
+
+# Optional: For converting ONNX models to other formats
+# Uncomment if needed
+# onnx-tf>=1.10.0  # For TensorFlow conversion
+# onnx2pytorch>=0.4.1  # For PyTorch conversion
